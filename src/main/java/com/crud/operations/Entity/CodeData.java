@@ -7,6 +7,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
@@ -22,7 +23,7 @@ public class CodeData implements Serializable{
 	@Column(name="_id")
 	private String id;
 
-	@OneToMany(targetEntity = Code.class, cascade = CascadeType.ALL)
+	@OneToMany(targetEntity = Code.class, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "cd_fk", referencedColumnName = "_id")
 	private List<Code> code;
 

@@ -9,6 +9,5 @@ public interface CodeDataRepository extends CrudRepository<CodeData,String> {
 
 	CodeData save(CodeDataModel codeDataModel);
 
-
 }
 
