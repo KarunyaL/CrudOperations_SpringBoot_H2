@@ -73,8 +73,9 @@ public class CodeDataService {
 
 	public CodeData getCodeDataById(String id) {
 		CodeData codeData = new CodeData();
-		logger.info("Record of " + id + " has been fetched");
 		codeData = codeDataRepository.findById(id).get();
+		logger.info("Record of " + id + " has been fetched");
+
 		return codeData;
 	}
 

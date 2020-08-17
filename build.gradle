@@ -23,15 +23,19 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter'
-   // implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     implementation 'com.h2database:h2'
   	implementation  'org.springframework.boot:spring-boot-devtools'
+  	//implementation 'com.googlecode.json-simple:json-simple'
+  	compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+  	
   
 
-	testImplementation('org.springframework.boot:spring-boot-starter-test') {
-		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-	}
+	testImplementation('org.springframework.boot:spring-boot-starter-test') 
+//	testImplementation('org.junit.jupiter:junit-jupiter-engine')
+	//testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.2'
+	testImplementation('org.mockito:mockito-core')
 }
+
 
 jar {
     from {

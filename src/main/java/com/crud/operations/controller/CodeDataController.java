@@ -92,8 +92,7 @@ public class CodeDataController {
 
 	@Async("asyncExecutor")
 	@GetMapping("/filter_async_subtypecode") 
-	public CompletableFuture<List<String>> filterGetSubtypeCodeData
-	(@RequestParam String typeCode) throws InterruptedException { 
+	public CompletableFuture<List<String>> filterGetSubtypeCodeData(@RequestParam String typeCode) throws InterruptedException { 
 		return codeDataService.filterGetSubtypeCodeData(typeCode); 
 	}
 
