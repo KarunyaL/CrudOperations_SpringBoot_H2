@@ -1,0 +1,34 @@
+{
+    "id": "1134789",
+    "code": [
+        {
+            "typeCode": "AB900",
+            "subtypeCodes": [
+                {
+                    "subtypeCode": "xyz990",
+                    "description": "subtypeCode-1"
+                },
+                {
+                    "subtypeCode": "xyz911",
+                    "description": "subtypeCode-2"
+                    
+                }
+            ]
+        },
+        {
+            "typeCode": "AB907",
+            "subtypeCodes": [
+                {
+                    "subtypeCode": "xyz915",
+                    "description": "subtypeCode-1"
+                    
+                },
+                {
+                    "subtypeCode": "xyz905",
+                    "description": "subtypeCode-3"
+                    
+                }
+            ]
+        }
+    ]
+}
